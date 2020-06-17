@@ -3,17 +3,30 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Accordion Demo</title>
+		<style>.bb-accordion {
+			border: 1px solid red;
+			margin: 1em;
+			}</style>
 		<link rel="stylesheet" href="../dist/index.css" />
 	</head>
 	<body>
-		<div class="bb-accordion" id="accordion">
+		<div class="bb-accordion">
+			<div class="new-accordion__panel" aria-label="First Panel Title Here">Content</div>
+			<div class="new-accordion__panel" aria-label="Second Panel Title Here">Content</div>
+			<div class="new-accordion__panel" aria-label="Third Panel Title Here">Content</div>
+		</div>
 
+		<div class="bb-accordion">
+			<div class="new-accordion__panel" aria-label="First 1 Panel Title Here">Content</div>
+			<div class="new-accordion__panel" aria-label="Second 2 Panel Title Here">Content</div>
+			<div class="new-accordion__panel" aria-label="Third 3 Panel Title Here">Content</div>
 		</div>
 
 		<script src="../dist/index.min.js"></script>
 		<script>
 			accordion({
-				'el' : document.getElementById( 'accordion' ),
+				'selector' : '.bb-accordion',
+				'prefix': 'new-'
 			});
 		</script>
 	</body>

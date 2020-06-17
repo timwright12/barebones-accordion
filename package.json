@@ -51,5 +51,8 @@
     "> 1%",
     "maintained node versions",
     "IE 11"
-  ]
+  ],
+  "dependencies": {
+    "@barebones/keycodes": "^1.0.1"
+  }
 }
